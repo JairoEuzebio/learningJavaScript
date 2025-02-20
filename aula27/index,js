@@ -1,0 +1,19 @@
+// ? :
+
+const pontuacaoUsuario = 1000;
+const nivelUsuario = pontuacaoUsuario >= 1000 ? 'Usuario VIP' : 'Usuario Normal';
+
+const corUsuario = Pink;
+const corPadrao = corUsuario || 'Preta';
+
+console.log(nivelUsuario, corPadrao);
+
+/* If e Else 
+const pontuacaoUsuario2 = 1000;
+if (pontuacaoUsuario2 >= 1000) {
+    console.log('Usuario VIP');
+} else {
+    console.log('Usuario Normal');
+}
+*/
+
