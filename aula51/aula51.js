@@ -1,0 +1,53 @@
+function falaFrase(comeco) {
+    function falaResto(resto) {
+        return comeco + ' ' + resto;
+    }
+
+    return falaResto;
+}
+
+/*
+const olaMundo = falaFrase('Olá');
+console.log(olaMundo('Mundo!')
+)
+*/
+
+/*
+const fala = falaFrase('Olá');
+const resto = fala('Mundo!');
+console.log(resto);
+*/
+
+/*
+function duplica(n) {
+    return n * 2;
+}
+
+function triplica(n) {
+    return n * 3;
+}
+
+function quadriplica(n) {
+    return n * 4;
+}
+
+console.log(duplica(2));
+console.log(triplica(2));
+console.log(quadriplica(2));
+
+*/
+
+function criaMultiplicador(multiplicador){
+
+    return function (n){
+        return n * multiplicador;
+    };
+
+    
+}
+
+
+
+console.log(duplica(2));
+console.log(triplica(2));
+console.log(quadriplica(2));
