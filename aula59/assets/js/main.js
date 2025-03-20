@@ -1,5 +1,5 @@
-function Calculadora(){
-  this.display = document.querySelector('.display')
+function Calculadora() {
+  this.display = document.querySelector('.display');
 
   this.inicia = () => {
     this.capturaCliques();
@@ -15,12 +15,12 @@ function Calculadora(){
   };
 
   this.capturaCliques = () => {
-   document.addEventListener('click', event =>{
+    document.addEventListener('click', event => {
       const el = event.target;
       if (el.classList.contains('btn-num')) this.addNumDisplay(el);
       if (el.classList.contains('btn-clear')) this.clear();
       if (el.classList.contains('btn-del')) this.del();
-      if (el.classList.contains('btn-eq')) this.realizaConta();     
+      if (el.classList.contains('btn-eq')) this.realizaConta();
     });
   };
 
@@ -46,10 +46,7 @@ function Calculadora(){
   };
 
   this.clear = () => this.display.value = '';
-  this.addNumDisplay = el => this.display.value += el.innerText;
   this.del = () => this.display.value = this.display.value.slice(0, -1);
-  
-  
 }
 
 const calculadora = new Calculadora();
